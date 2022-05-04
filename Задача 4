@@ -13,7 +13,7 @@ namespace Rect
                 {
                 for(int j = 0; j < row; j++)
                 {
-                    Console.Write("$");
+                    Console.Write("$ ");
                 }
                 Console.WriteLine();
                 row++;
