@@ -1,0 +1,23 @@
+using System;
+
+namespace Rect
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int col = int.Parse(Console.ReadLine());
+            int row = 1;
+            for(int i = 0; i < col; i++)
+                {
+                for(int j = 0; j < row; j++)
+                {
+                    Console.Write("$");
+                }
+                Console.WriteLine();
+                row++;
+            }
+        }
+    }
+}
