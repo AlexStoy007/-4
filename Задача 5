@@ -1,0 +1,40 @@
+using System;
+
+namespace Rect
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            
+            int col = int.Parse(Console.ReadLine());
+            for (int i = 0; i < col; i++)
+            {
+                for (int j = 0; j < col - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.Write("*");
+                for(int k = 0; k <= i - 1; k++)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+            }
+            for(int i = col - 1; i > 0; i--)
+            {
+                for (int j = col - i; j > 0; j--)
+                {
+                    Console.Write(" ");
+                }
+                Console.Write(" *");
+                for (int k = i - 1; k > 0; k--)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
