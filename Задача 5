@@ -1,0 +1,48 @@
+using System;
+
+namespace Rect
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            for(int rows = 1; rows <= n; rows++)
+            {
+                for(int cols = 1; cols <= n; cols++)
+                {
+                    if (cols == 1 && rows == 1)
+                    {
+                        Console.Write("+ ");
+                    }
+                    else if(rows == 1 && cols == n)
+                    {
+                        Console.Write("+");
+                        Console.WriteLine();
+                    }
+                    else if(rows == n && cols == 1)
+                    {
+                        Console.Write("+ ");
+                    }
+                    else if(rows == n && cols == n)
+                    {
+                        Console.Write("+");
+                    }
+                    else if(cols == 1 && rows != 1 && rows != n)
+                    {
+                        Console.Write("| ");
+                    }
+                    else if(cols == n && rows != 1 && rows != n)
+                    {
+                        Console.Write("|");
+                        Console.WriteLine();
+                    }
+                    else
+                    {
+                        Console.Write("- ");
+                    }
+                }
+            }
+        }
+    }
+}
